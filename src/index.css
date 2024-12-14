@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 140px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Prevent layout shifts */
+.grid {
+  grid-auto-rows: 1fr;
+}
+
+/* Ensure consistent card heights */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Prevent text wrapping in tabs */
+.tabs-list {
+  white-space: nowrap;
+}
+
+/* Ensure consistent image sizes */
+.team-logo {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
