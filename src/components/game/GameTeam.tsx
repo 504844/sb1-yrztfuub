@@ -67,7 +67,7 @@ export function GameTeam({
               </Button>
             </TooltipTrigger>
             <TooltipContent>
-              {isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+              {isFavorite ? 'Pašalinti' : 'Pridėti'}
             </TooltipContent>
           </Tooltip>
         </div>
@@ -77,14 +77,14 @@ export function GameTeam({
       <Dialog open={showDialog} onOpenChange={setShowDialog}>
         <DialogContent className="sm:max-w-[425px] bg-background">
           <DialogHeader>
-            <DialogTitle>Remove from Favorites</DialogTitle>
+            <DialogTitle>Pašalint mėgstamą komandą</DialogTitle>
             <DialogDescription>
-              Are you sure you want to remove {name} from your favorite teams?
+              Tikrai norite pašalinti {name} iš mėgstamų komandų sąrašo?
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowDialog(false)}>
-              Cancel
+              Atšaukti
             </Button>
             <Button
               variant="destructive"
@@ -93,7 +93,7 @@ export function GameTeam({
                 setShowDialog(false);
               }}
             >
-              Remove
+              Pašalinti
             </Button>
           </DialogFooter>
         </DialogContent>
